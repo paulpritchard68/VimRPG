@@ -33,6 +33,7 @@ syn match clpKeyword2 contained "\<call\( on \(error\|failure\|halt\|notready\)\
 syn match clpKeyword contained "\<\(do\|dowhile\|enddo\|chgvar\|pgm\|if\|endpgm\|monmsg\|dcl\|dclf\)\>"
 syn match clpKeyword contained "\<\(chkobj\|pull\|push\|queue\|return\|say\|select\|trace\)\>"
 syn match clpKeyword contained "\<\(subr\|endsubr\|callsubr\)\>"
+syn match clpKeyword contained "\<\(qsh\|runsql\|runsqlstm\)\>"
 
 " Conditional phrases
 syn match clpConditional "\(^\s*\| \)\(to\|by\|for\|until\|while\|then\|when\|otherwise\|else\)\( \|\s*$\)" contains=ALLBUT,clpConditional
