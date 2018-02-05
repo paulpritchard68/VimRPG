@@ -17,20 +17,19 @@ syntax keyword rpgleOpcode do dou dow enddo iter leave
 syntax keyword rpgleOpcode clear reset
 syntax keyword rpgleOpcode dsply dump exfmt
 syntax keyword rpgleOpcode for to endfor
-syntax keyword rpgleOpcode monitor on-error endmon
+syntax keyword rpgleOpcode monitor endmon
 syntax keyword rpgleOpcode select when other endsl
 syntax keyword rpgleOpcode test
 syntax keyword rpgleOpcode return
-syntax keyword rpgleOpcode xml-into xml-sax
 
 " SQL Built in functions
-syntax keyword rpgleSqlBif asval char character_length coalesce concat 
+syntax keyword rpgleSqlBif asval char character_length coalesce concat
 syntax keyword rpgleSqlBif curdate curtime date day dayofmonth dayofweek
 syntax keyword rpgleSqlBif dayofyear days decimal digits double_precision
 syntax keyword rpgleSqlBif float floor hash hex hour ifnull integer
 syntax keyword rpgleSqlBif length ltrim max microsecond min minute
-syntax keyword rpgleSqlBif mod month nodename nodenumber now partition 
-syntax keyword rpgleSqlBif power quarter rrn rtrim second sqrt strip 
+syntax keyword rpgleSqlBif mod month nodename nodenumber now partition
+syntax keyword rpgleSqlBif power quarter rrn rtrim second sqrt strip
 syntax keyword rpgleSqlBif substring time timestamp translate trim
 syntax keyword rpgleSqlBif ucase value varchar vargraphic week year zoned
 syntax keyword rpgleSqlBif avg count max min stddev sum var
@@ -70,6 +69,11 @@ syntax match rpgleOperator "\m="
 syntax match rpgleOperator "\m<>"
 syntax match rpgleOperator "\m+="
 syntax match rpgleOperator "\m-="
+
+" Annoying opcodes with dashes in them
+syntax match rpgleOpcode "\mon-error"
+syntax match rpgleOpcode "\mxml-into"
+syntax match rpgleOpcode "\mxml-sax"
 
 " Strings, numbers, booleans and special characters
 syntax region rpgleString start=/\m'/ skip=/\m\\./ end=/\m'/
