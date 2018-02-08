@@ -36,7 +36,7 @@ syntax keyword rpgleSqlBif avg count max min stddev sum var
 syntax match rpgleSqlBif "\mleft\( outer\)\@!"
 
 " SQL Keywords
-syntax keyword rpgleSql exec sql declare union cursor
+syntax keyword rpgleSql exec sql declare union cursor fetch
 syntax keyword rpgleSql select from where with join as
 syntax keyword rpgleSql update delete set insert into values
 syntax keyword rpgleSql between in like exists case end
