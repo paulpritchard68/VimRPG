@@ -25,12 +25,12 @@ syntax keyword rpgleOpcode return
 " SQL Built in functions
 syntax keyword rpgleSqlBif asval char character_length coalesce concat
 syntax keyword rpgleSqlBif curdate curtime date day dayofmonth dayofweek
-syntax keyword rpgleSqlBif dayofyear days decimal digits double_precision
-syntax keyword rpgleSqlBif float floor hash hex hour ifnull integer
+syntax keyword rpgleSqlBif dayofyear days decimal dec digits double_precision
+syntax keyword rpgleSqlBif float floor hash hex hour ifnull integer int
 syntax keyword rpgleSqlBif length ltrim max microsecond min minute
 syntax keyword rpgleSqlBif mod month nodename nodenumber now partition
 syntax keyword rpgleSqlBif power quarter rrn rtrim second sqrt strip
-syntax keyword rpgleSqlBif substring time timestamp translate trim
+syntax keyword rpgleSqlBif substring substr time timestamp translate trim
 syntax keyword rpgleSqlBif ucase value varchar vargraphic week year zoned
 syntax keyword rpgleSqlBif avg count max min stddev sum var
 syntax match rpgleSqlBif "\mleft\( outer\)\@!"
