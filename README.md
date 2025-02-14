@@ -1,4 +1,2 @@
-# RPG highlighter for Vim #
-It is perfectly possible to write RPG programs using Vim. So there should be a highlighter.
-
-To install this, simply copy the `ftdetect` and `syntax` folders to the `~/.vim` folder (create this if necessary).
+# This repository is no longer being maintained #
+The Vim syntax highlighting has been incorporated into the [Codeberg/Configurate](https://codeberg.org/PaulPritchard/Configurate) repository.
